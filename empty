@@ -1,0 +1,138 @@
+<?php
+  if (isset($_SESSION['userId'])) {
+    echo '
+    <body class="text-center">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="home.html">Test Practice</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="index.php"><span data-feather="log-out"></span>Sign out</a>
+        </li>
+      </ul>
+    </nav>';
+  }
+  else {
+    echo '
+    <body class="text-center">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="home.html">Test Practice</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="index.php"><span data-feather="log-in"></span>Sign in</a>
+        </li>
+      </ul>
+    </nav></p>';
+  }
+   ?>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="margin-bottom: 1.5rem !important;">
+        <a class="navbar-brand" href="home.php">Test Practice <span class="highlight" style="color:#009fff; font-weight: lighter;">ТДМУ</span> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Dashboard </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="demo.php"> Demo </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Total MCQ List</a>
+                        <a class="dropdown-item" href="#">Total MCQ Practice</a>
+                        <a class="dropdown-item" href="#">Errors</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="includes/logout.inc.php">
+                <button type="submit" name="logout-submit">Sign out</button>
+
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        <bo class="nav-link" href="index.php"><span data-feather="log-out"></span>Sign out</a>
+                    </li>
+
+                </ul>
+
+            </form>
+        </div>
+    </nav>
+
+
+
+    <a href="1c1s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>
+                                    <a href="5c1s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>
+                                    <a href="5c2s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>
+
+
+
+ <main role="" style=" width: 100%; max-width: 35rem; padding: 10px; margin: auto; padding-top: inherit; ">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">You are logged in</h1>
+            <p class="lead text-muted">Welcome back, its a great day to start practicing.</p>
+            <p>
+
+                while(mysql_fetch_array($queryresults)){
+                if ($row['uidUsers'] = $mailuid && $row['pwdUsers'] = $pwdcheck && $row['typeUsers'] = $Admin) {
+                echo "
+                <a href="1c1s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>";
+                }
+                elseif ($row['uidUsers'] = $mailuid && $row['pwdUsers'] = $pwdcheck && $row['typeUsers'] = $1FirstS) {
+                echo
+                "<a href="1c1s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>";
+                }
+                lseif ($row['uidUsers'] = $mailuid && $row['pwdUsers'] = $pwdcheck && $row['typeUsers'] = $1FirstS) {
+                echo
+                "<a href="5c1s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>";
+                }
+                lseif ($row['uidUsers'] = $mailuid && $row['pwdUsers'] = $pwdcheck && $row['typeUsers'] = $1FirstS) {
+                echo
+                "<a href="5c2s_year_index.php" class="btn btn-primary my-2">Start Practice.</a>";
+                }
+                }
+
+            </p>
+        </div>
+    </section>
+</main
+
+
+
+<!-- To specify cause of error -->
+  <?php
+   if (isset($_GET['error'])) {
+      if ($_GET['error'] == "emptyfields") {
+        echo "<p class='signuperror' style='color:red;'>Fill in all fields!</p>";
+    }
+    else if ($_GET['error'] == "invaliduidmail") {
+      echo "<p class='signuperror'>Invalid username and email!</p>";
+    }
+    else if ($_GET['error'] == "invaliduid") {
+      echo "<p class='signuperror'>Invalid username and email!</p>";
+    }
+    else if ($_GET['error'] == "invaliduidmail") {
+      echo "<p class='signuperror'>Invalid username!</p>";
+    }
+    else if ($_GET['error'] == "invalidmail") {
+      echo "<p class='signuperror'>Invalid email!</p>";
+    }
+    else if ($_GET['error'] == "usertaken") {
+      echo "<p class='signuperror'>Username is already taken!</p>";
+    }
+    else if($_GET['signup'] == "success") {
+      echo "<p class='signsuccess'>Signup successful!</p>";
+    }
+  }
+  ?>
+
+
+student assistant, students assistant , students assistant app, student assistant app, student assistant application, a student research assistant, student assistant benefits, student assistant exam, student assistant evaluation, student assistant high school, student assistant library, student assistant research, student assistant training, student assistant teacher, practice test for postal exams 473 free, practice test for nursing exams, medical assistant practice test for written exams, ukrainian medical schools ranking, best ukrainian medical school,
